@@ -1,0 +1,84 @@
+.titleOfBlockCategories{
+    width:1000px;
+
+    margin:0 auto;
+    margin-top:-25px;
+}
+
+body{
+    padding:0 0 50px 0;
+}
+
+.points{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:1000px;
+    margin:0 auto;
+    grid-row-gap: 10px;
+}
+
+.pointOfCategories{
+    display: grid;
+    justify-items: center;
+
+  
+}
+
+.titleOfBlockCategories p{
+    font-family: 'Roboto';
+    font-size:36px;
+    color:#000;
+    cursor:default;
+}
+
+.pointOfCategories div{
+    width: 490px;
+    cursor:pointer;
+    height: 276px;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+    border-radius: 20px;
+    opacity:1;
+    transition: 500ms;
+}
+
+.pointOfCategories div:hover{
+    opacity: 0.7;
+}
+
+.pointOfCategories div p{
+    color:#fff;
+    font-family: 'Roboto';
+    font-size:20px;
+    padding:210px 0 0px 25px;
+}
+
+.firstPoint{
+    background-image: url('./one.png');
+}
+
+.secondPoint{
+    background-image: url('./two.png');
+}
+
+.thirdPoint{
+    background-image: url('./three.png');
+}
+
+
+.fourthPoint{
+    background-image: url('./four.png');
+}
+
+
+.fivethPoint{
+    background-image: url('./five.png');
+}
+
+
+.sixthPoint{
+    background-image: url('./six.png');
+}
+
