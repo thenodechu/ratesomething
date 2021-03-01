@@ -24,6 +24,10 @@ body{
   
 }
 
+.nothing{
+    text-decoration: none;
+}
+
 .titleOfBlockCategories p{
     font-family: 'Roboto';
     font-size:36px;

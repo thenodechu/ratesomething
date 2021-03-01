@@ -1,0 +1,106 @@
+.nameOfCategory{
+    width:1000px;
+    margin:0 auto;
+    margin-top:-30px;
+
+}
+
+.nameOfCategory p{
+    font-family: 'Roboto';
+    font-size:36px;
+}
+
+.image{
+    width: 960px;
+    height: auto;
+    padding:20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    margin:0 auto;
+}
+
+.image img{
+    max-width: 90%;
+    border-radius: 20px;
+}
+
+.buttonWithPoint{
+    width:40px;
+    height:40px;
+    border-radius: 5px;
+    cursor:pointer;
+    background:#E8E8E8;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Roboto';
+    color:#c7c7c7;
+    font-size:15px;
+}
+
+.blockWithButtons{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+
+}
+
+.controlBlock{
+    display: grid;
+    width: 1000px;
+    grid-template-columns: 5fr 3fr;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+    margin-top:25px;
+}
+
+.descriptionName a{
+    font-size:22px;
+    font-family: 'Roboto';
+}
+
+.description a{
+    font-size:14px;
+    font-family: 'Roboto';
+
+}
+
+.description{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top:10px;
+    word-wrap: break-word;
+    height:auto;
+}
+
+
+.descriptionName{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top:10px;
+}
+
+.givePoint a{
+    font-size: 15px;
+    font-family: 'Roboto';
+    color:#0085FF;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 860px) {
+    .image{
+        width: 90%;
+
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .image img{
+        max-width: 95%;
+        border-radius: 20px;
+    }
+}

@@ -1,14 +1,21 @@
 import React from "react";
-import Menu from "./menu/Menu";
-import Categories from "./categories/Categories";
+import Main from "./main/Main";
+import RatePage from "./ratePage/RatePage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Menu />
-        <Categories/>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Main} />
+          </Switch>
+          <Switch>
+            <Route exact path="/rateImage/:id" component={RatePage} />
+          </Switch>
+        </Router>
       </div>
     );
   }
