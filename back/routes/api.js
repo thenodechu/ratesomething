@@ -16,4 +16,18 @@ router.get("/get/image/:type", async function (req, res) {
     res.json(result);
 });
 
+router.post("/post/grade/", async function (req, res) {
+    if (req.body.grade >= 1 && req.body.grade <= 10) {
+        let number = await model.collection.findOne({ index: req.body.idOfImg });
+        let resGrade = number.grade + req.body.grade;
+       await model.collection.updateOne({ index: req.body.idOfImg }, { $set: { numberOfGrades: number.numberOfGrades + 1, grade: resGrade} });
+        let count = await model.collection.find().count();
+        let result = await model.findOne({ index: getRandomIntInclusive(0, count - 1), type: req.body.type });
+        res.json(result);
+    } else {
+        res.json("Выберите оценку");
+    }
+ 
+});
+
 module.exports = router;

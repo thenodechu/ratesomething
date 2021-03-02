@@ -41,6 +41,21 @@
     font-size:15px;
 }
 
+.buttonWithPointBlack{
+    width:40px;
+    height:40px;
+    border-radius: 5px;
+    cursor:pointer;
+    background:#cfcfcf;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Roboto';
+    color:#aaaaaa;
+    font-size:15px;
+}
+
+
 .blockWithButtons{
     display: grid;
     grid-template-columns: repeat(10,1fr);
