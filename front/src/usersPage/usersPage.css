@@ -1,0 +1,96 @@
+.imagesOfUser{
+    width: 1030px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.gradeDelete{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.deleteButton{
+    display: grid;
+    justify-self: end;
+    align-items: center;
+    
+}
+
+.grade{
+    display: grid;
+    align-items: center;
+    justify-items: start;
+}
+
+.grade a{
+    color:#000;
+    font-family: 'Roboto';
+    font-size:16px;
+    cursor:default;
+}
+
+.deleteButton a{
+    color:#0085FF;
+    font-family: 'Roboto';
+    font-size:14px;
+    cursor:pointer;
+}
+
+.imgOfUser {
+    width: 310px;
+    background-repeat: no-repeat center top fixed;
+    height: 310px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.typeOfImage a{
+    font-family: 'Roboto';
+    font-size:12px;
+}
+
+.infoAboutImg{
+    margin:5px 0 0 0;
+    height: 50px;
+}
+
+
+.addButton{
+    width: 310px;
+    border: 1px solid #ebebeb;
+    background:#fff;
+    border-radius: 20px;
+    height: 310px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    cursor:pointer;
+    transition: 200ms;
+}
+
+.addButton:hover{
+    border: 1px solid #d3d3d3;
+    background:rgb(245, 245, 245);
+    color: #a5a5a5;
+}
+
+.addButton a{
+    font-family: 'Roboto';
+    font-size:16px;
+    color: #d3d3d3;
+
+}
+
+.blockWithImg{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}

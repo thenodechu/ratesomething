@@ -18,7 +18,7 @@
     grid-template-columns: repeat(2,1fr);
 }
 
-.first p{
+.first a{
     font-size:16px;
     font-family: 'Roboto';
     cursor:pointer;
@@ -38,16 +38,23 @@
     display: flex;
 }
 
-.second p{
+.second a{
     color:#0085FF;
     font-family: 'Roboto';
     font-size:16px;
+    transition: 150ms;
     cursor:pointer;
 }
 
-.signUp{
-    margin-left:50px;
+.second a:hover{
+    color:#016bce;
 }
+
+.signIn{
+    margin-left:-50px;
+}
+
+
 
 .toRight{
     display: grid;

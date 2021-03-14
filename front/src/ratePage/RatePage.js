@@ -15,9 +15,10 @@ class RatePage extends React.Component {
         this.postGrade = this.postGrade.bind(this);
       }
     async getDb() {
-    let result = await fetch("http://localhost:8080/api/get/image/"+ this.props.match.params.id);
-        
+    let result = await fetch("http://localhost:8080/api/get/image/"+ this.props.match.params.type);
+         
         let db = await result.json();
+        console.log(db);
         if (db !== null) {
             await this.setState({ db: [db] });
         }
@@ -30,13 +31,13 @@ class RatePage extends React.Component {
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
             },
-            body: JSON.stringify({ grade: this.state.indexOfGrade,type:this.props.match.params.id,idOfImg:this.state.db[0].index }),
+            body: JSON.stringify({ grade: this.state.indexOfGrade,type:this.props.match.params.type,idOfImg:this.state.db[0].index }),
         });
         let db = await response.json();
         if (db === "Выберите оценку") {
             console.log(db)
         } else {
-            await this.setState({ db: [db] });
+            await this.setState({ db: [db],numberOfGrade: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],indexOfGrade:0 });
         }
        
     }
@@ -62,9 +63,11 @@ class RatePage extends React.Component {
         <div>
             <Menu />
             <div className="nameOfCategory">
-                <p>{this.props.match.params.id}</p>
+                <p>{this.props.match.params.type}</p>
             </div>
-            
+            <div>
+                
+            </div>
                 {this.state.db.map(function (item,index) {
                     return (
                         <div key={index}>

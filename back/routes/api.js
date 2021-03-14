@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const router = express.Router();
 const model = require("../models/images").Images;
+
+const SignUp = require("../signupUser");
 router.use(bodyParser.json());
 
 function getRandomIntInclusive(min, max) {
@@ -16,6 +18,12 @@ router.get("/get/image/:type", async function (req, res) {
     res.json(result);
 });
 
+router.get("/get/imageUsers/:id", async function (req, res) {
+    let result = await model.find({ idOfUser: req.params.id });
+    res.json(result);
+});
+
+
 router.post("/post/grade/", async function (req, res) {
     if (req.body.grade >= 1 && req.body.grade <= 10) {
         let number = await model.collection.findOne({ index: req.body.idOfImg });
@@ -28,6 +36,18 @@ router.post("/post/grade/", async function (req, res) {
         res.json("Выберите оценку");
     }
  
+});
+
+router.post("/post/users", async function (req, res) {
+    let user = {
+        name: req.body.user.name,
+        password: req.body.user.password,
+        email: req.body.user.email,
+        date: new Date()
+    };
+    let signUp = new SignUp(user);
+    let result = await signUp.resultSingup();
+    res.json(result);
 });
 
 module.exports = router;

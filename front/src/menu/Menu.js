@@ -11,16 +11,16 @@ class Menu extends React.Component {
               <span className="logo">Ratesomething</span>
           </Link>
           <Link  className="nothing" to="/">
-            <p className="mainPage">Главная</p>
+            <a className="mainPage">Главная</a>
           </Link>
             <Link  className="nothing" to="/">
-              <p className="myPictures">Оценить</p>
+              <a className="myPictures">Cайте</a>
             </Link>
             </div>
             <div className="toRight">
                 <div className="second">
-                    <p className="signIn">Войти</p>
-                    <p className="signUp">Регистрация</p>
+                <Link  className="nothing" to="/signIn"><a className="signIn" style={ {margin:"0 50px 0 0px"}}>Войти</a></Link>
+                  <Link  className="nothing" to="/signUp"><a className="signUp">Регистрация</a></Link>
                 </div>
             </div>
                 

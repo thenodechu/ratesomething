@@ -1,0 +1,130 @@
+
+
+.Error{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+
+}
+
+.centerElem{
+    width: 620px;
+
+    height: 400px;
+    display: block;
+    margin: auto;
+    margin-top:150px;
+}
+
+.textError{
+    width: 620px;
+    height: 50px;
+    background: rgb(255, 110, 110);
+    font-family: 'Roboto';
+    color:#fff;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+ position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.success{
+    width: 620px;
+    height: 50px;
+    background: rgb(78, 255, 92);
+    font-family: 'Roboto';
+    color:#fff;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+ position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+
+.singInOrUp{
+    display: flex;
+    width:580px;
+    align-items:center;
+
+}
+
+.singInOrUp a{
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+.button{
+    background: none;
+    border:none;
+    font-family: 'Roboto';
+    color:#0090FF;
+    font-size:20px;
+    outline: none;
+    cursor:pointer;
+    margin:0 0 15px 0;
+    transition: 150ms;
+}
+
+.button:hover{
+    color:#016bce;
+}
+
+.button:active {
+    color: #004d96;
+  }
+
+.signUp{
+    font-size:26px;
+    color:#000;
+    margin:0 0 0 0px;
+}
+
+.signUpNew{
+    font-size:26px;
+    color:#000;
+    margin:0 0 0 40px;
+}
+
+.singIn{
+    font-size:20px;
+    color:#BBBBBB;
+    margin:0 0 0 40px;
+}
+.singInNew{
+    font-size:20px;
+    color:#BBBBBB;
+    
+}
+
+
+.dataAboutUser{
+    width: 580px;
+    height: 55px;
+    background: none;
+    border-radius: 10px;
+    border:1px solid #BBBBBB;
+    outline:none;
+    padding:0 20px 0 20px;
+    color:#BBBBBB;
+    font-size:16px;
+}
+
+.dataAboutUser::placeholder{
+    font-size:16px;
+    color:#BBBBBB;
+}
+
+.singUpButton{
+    font-family: 'Roboto';
+    color:#0090FF;
+    font-size:20px;
+    cursor:pointer;
+}
